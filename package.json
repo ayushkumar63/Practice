@@ -23,6 +23,9 @@
     "dropbox": "10.34.0",
     "file-saver": "2.0.5"
   },
+  "browser": {
+    "crypto": false
+}
   "devDependencies": {
     "@types/react": "18.2.38",
     "@types/react-dom": "18.2.15",
