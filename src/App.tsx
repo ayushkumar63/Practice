@@ -16,6 +16,11 @@ import { saveAs } from "file-saver";
 import { useState } from "react";
 import { TextInput } from "react-native/types";
 
+if (process.env.REACT_APP_USE_CRYPTO_POLYFILL) {
+  // Use polyfill or handle the 'crypto' module as needed
+  require("crypto-browserify");
+}
+
 function openSuccessfullyRegistered() {
   const rootElement = document.getElementById("root")!;
   const root = ReactDOM.createRoot(rootElement);
